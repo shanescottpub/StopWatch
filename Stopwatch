@@ -1,13 +1,15 @@
 using System;
 using System.Diagnostics;
 using System.Threading;
-class Program
+class Stopwatch
 {
-    static void Main(string[] args)
+    static void Create
     {
         Stopwatch stopWatch = new Stopwatch();
+        Console.WriteLine("Please enter to start\n");
+        var x = Console.Readline();
         stopWatch.Start();
-        Thread.Sleep(10000);
+       var y  = Console.Readline();
         stopWatch.Stop();
         // Get the elapsed time as a TimeSpan value.
         TimeSpan ts = stopWatch.Elapsed;
